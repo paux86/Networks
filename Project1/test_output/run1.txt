@@ -1,0 +1,99 @@
+-client 1-
+
+C:\Users\Matt\Desktop\CompSci\Spring 2021\networks\Proj1\tictactoe>Client.py 127.0.0.1
+Connected to server
+- - -
+- - -
+- - -
+Your move: 0
+Waiting for opponent's move
+
+X O -
+- - -
+- - -
+Your move: 2
+Waiting for opponent's move
+
+X O X
+O - -
+- - -
+Your move: 4
+Waiting for opponent's move
+
+X O X
+O X O
+- - -
+Your move: 6
+Waiting for opponent's move
+
+X O X
+O X O
+X - -
+You win!
+
+-client 2-
+
+C:\Users\Matt\Desktop\CompSci\Spring 2021\networks\Proj1\tictactoe>Client.py 127.0.0.1
+Connected to server
+X - -
+- - -
+- - -
+Your move: 1
+Waiting for opponent's move
+
+X O X
+- - -
+- - -
+Your move: 3
+Waiting for opponent's move
+
+X O X
+O X -
+- - -
+Your move: 5
+Waiting for opponent's move
+
+X O X
+O X O
+X - -
+You lost
+
+-server-
+
+student@dev:~/Project1$ sudo python3 Server.py
+[sudo] password for student: 
+INFO:root:Server is listening on port 69
+INFO:root:Accepted connection.
+INFO:root:Player connected!
+INFO:root:Server is listening on port 69
+INFO:root:Player X requested to play a new game
+INFO:root:Waiting for opponent
+INFO:root:Accepted connection.
+INFO:root:Player connected!
+INFO:root:Player O requested to play a new game
+INFO:root:Starting new game
+INFO:root:Starting new game
+INFO:root:Player: X, x_turn: True
+INFO:root:Message: b'\x00\x02\x00'
+INFO:root:Move received
+INFO:root:Player: O, x_turn: False
+INFO:root:Message: b'\x00\x02\x01'
+INFO:root:Move received
+INFO:root:Player: X, x_turn: True
+INFO:root:Message: b'\x00\x02\x02'
+INFO:root:Move received
+INFO:root:Player: O, x_turn: False
+INFO:root:Message: b'\x00\x02\x03'
+INFO:root:Move received
+INFO:root:Player: X, x_turn: True
+INFO:root:Message: b'\x00\x02\x04'
+INFO:root:Move received
+INFO:root:Player: O, x_turn: False
+INFO:root:Message: b'\x00\x02\x05'
+INFO:root:Move received
+INFO:root:Player: X, x_turn: True
+INFO:root:Message: b'\x00\x02\x06'
+INFO:root:Move received
+INFO:root:Disconnect client.
+INFO:root:Disconnect client.
+INFO:root:Server is listening on port 69
